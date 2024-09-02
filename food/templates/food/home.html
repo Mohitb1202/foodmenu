@@ -1,0 +1,40 @@
+{% extends 'food/base.html' %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+        <div class="card">
+                <div class="card-header text-white bg-info">
+                    <div class="card-title">
+                        <h2 class="offset-md-1">Welcome to Food Menu App</h2></br>
+                            <h6 class="offset-md-3">Good Food and Great Vibes<h6>
+
+                    </div>
+                </div><br><br>
+
+        </div>
+        </div>
+
+        <div class="col-md-4 offset-md-4">
+            <div class="card">
+                <div class="card-header text-white bg-info">
+                    <div class="card-title">
+
+                        <b>Login or Sign Up</b>
+
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5>Please Register</h5>
+                    <p>Already Registered? <a href="{% url 'login' %}">Login</a></p>
+
+
+                    <a href="{% url 'register' %}" class="btn btn-primary">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
